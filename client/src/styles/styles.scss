@@ -1,0 +1,100 @@
+//$fa-font-path:"../node_modules/font-awesome/fonts";
+@import '../../node_modules/font-awesome/css/font-awesome.css';
+
+/* Variables */
+$vin-blue: #5bb7db;
+$vin-green: #60b044;
+$vin-red: #ff0000;
+$dark-blue: #006495;
+$white: #FFFFFF;
+$orange: #E0A025;
+
+/* Styles */
+
+body {
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height:100%;
+  margin: 0;
+  padding-bottom: 70px;
+}
+
+.navbar-default{
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  background-color: $dark-blue;
+  .navbar-brand{
+    color: $white;
+    background-color: transparent;
+    &:hover, &:focus, &:active{
+      color: $orange;
+    }
+  }
+
+  .navbar-nav > li > a{
+    font-weight: bold;
+    color: $white;
+    &:hover, &:focus, &:active{
+      color: $orange;
+    }
+  }
+
+  .navbar-toggle .icon-bar {
+    background-color: $white;
+  }
+}
+
+#pageContent{
+  padding: 20px;
+  form{
+    
+    @media screen and (min-width: 768px) {
+      vertical-align: top;
+      display: inline-block;
+      width: 40%;
+    } 
+  }
+  #chartContainer{
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      vertical-align: top;
+      display: inline-block;
+      width: 60%;
+    } 
+  }
+}
+
+.jumbotron{
+  padding: 20px;
+  border-radius: 5px;
+  h2 {
+    color: $vin-blue;
+  }
+}
+
+.footer{
+  padding-bottom: 10px;
+}
+
+td {
+	padding: 12px;
+}
+
+
+.fa{
+  margin: 5px;
+  color: $white;
+}
+
+.btn{
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.chart{
+  width: 50%;
+}
+
+.error{
+  color: $vin-red;
+}
